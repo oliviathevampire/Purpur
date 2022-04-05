@@ -147,7 +147,7 @@ index e0b1f0671d16ddddcb6725acd25a1d1d69e42701..8c3c68465197fafc14849dc38a572e30
      protected LineReader buildReader(LineReaderBuilder builder) {
          builder
 -                .appName("Paper")
-+                .appName("Purpur") // Purpur
++                .appName("Vampur") // Purpur
                  .variable(LineReader.HISTORY_FILE, java.nio.file.Paths.get(".console_history"))
                  .completer(new ConsoleCommandCompleter(this.server))
                  .option(LineReader.Option.COMPLETE_IN_WORD, true);
@@ -184,7 +184,7 @@ index 371b0f95b23d67c9913875a3dd7888e722551f18..a6f29c00d6716b501d0f52db8670d81e
      @DontObfuscate
      public String getServerModName() {
 -        return "Pufferfish"; // Pufferfish - Pufferfish > // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "Purpur"; // Purpur - Purpur > // Pufferfish - Pufferfish > // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "Vampur"; // Purpur - Purpur > // Pufferfish - Pufferfish > // Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public SystemReport fillSystemReport(SystemReport details) {
@@ -229,7 +229,7 @@ index 22dc604b42b068ca7b5cbf7d3920a4696c96ad34..a0c08d7c6f1d9f3e157c4776ba9b2536
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Pufferfish"; // Paper // Pufferfish
-+    private final String serverName = "Purpur"; // Paper // Pufferfish // Purpur
++    private final String serverName = "Vampur"; // Paper // Pufferfish // Purpur
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
@@ -269,7 +269,7 @@ index c022751e3b45469cc0ad6732e2d6ff08918bafa4..72bc0a1ad028f7c180487be8f0e99031
          }
  
 -        throw new UnsupportedOperationException("Unsupported monster type: " + type + ". This is a bug, report this to Spigot.");
-+        throw new UnsupportedOperationException("Unsupported monster type: " + type + ". This is a bug, report this to Purpur."); // Purpur
++        throw new UnsupportedOperationException("Unsupported monster type: " + type + ". This is a bug, report this to Vampur."); // Purpur
      }
  
      @Override
@@ -282,7 +282,7 @@ index cdefb2025eedea7e204d70d568adaf1c1ec4c03c..d1526ed7197b883e1d1f07baf285bf5e
              } else {
                  //this.debugTail = this.debugTail.setNext(new CraftAsyncDebugger(currentTick + CraftScheduler.RECENT_TICKS, task.getOwner(), task.getTaskClass())); // Paper
 -                task.getOwner().getLogger().log(Level.SEVERE, "Unexpected Async Task in the Sync Scheduler. Report this to Paper"); // Paper
-+                task.getOwner().getLogger().log(Level.SEVERE, "Unexpected Async Task in the Sync Scheduler. Report this to Purpur"); // Paper // Purpur
++                task.getOwner().getLogger().log(Level.SEVERE, "Unexpected Async Task in the Sync Scheduler. Report this to Vampur"); // Paper // Purpur
                  // We don't need to parse pending
                  // (async tasks must live with race-conditions if they attempt to cancel between these few lines of code)
              }
